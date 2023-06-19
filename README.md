@@ -28,10 +28,10 @@ Este texto es un bloque
 
 ```
 
-###enlace
+### enlace
 [github pages](https://pages.github.com/)
 
-###imagen
+### imagen
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
 
 1. uno
@@ -46,11 +46,11 @@ Este texto es un bloque
  - first
   -second
 
-###lista tareas
+### lista tareas
 
 -[x] comprar helados
 -[ ] comprar manzanas
 -[] \(otras tareas)
 
-###mencion
+### mencion
 @codebaou
