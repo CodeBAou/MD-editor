@@ -1,0 +1,95 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  padding:0;
+  background-color:white;
+}
+
+header{
+ height: 20px;
+ width:100vw;
+  border:none;
+  padding:0;
+  padding-top:-1px;
+  margin:0;
+  font-size: 15px;
+}
+
+.btnMenu{
+ width:20px;
+ height:20px;
+ margin:0px;
+ padding:0px;
+ color:white;
+ font-size:18px;
+ align-content: center;
+ padding-top:-2px;
+ background-color:black;
+ border:none;
+}
+
+main{
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow:scroll;
+  border:none;
+}
+
+textarea{
+  min-width: 96vw;
+  height:40px;
+  font-size:12px;
+  border:none;
+  background-color:rgb(217, 240, 255);
+  border: 1px solid rgb(40, 167, 255);
+  resize: vertical;
+}
+
+.pallet{
+   display:flex;
+   flex-direction: row;
+   height:20px;
+   min-width:400px;
+   background-color: rgb(118, 193, 254);
+   border:1px solid rgb(180, 224, 255);
+}
+
+.icoPallet:hover{
+  background-color: rgb(53, 162, 251);
+}
+
+.submenu{
+  position:absolute;
+  display:flex;
+  flex-direction:column;
+  width:200px;
+  
+  margin-top:20px;
+  background-color: rgb(83, 176, 252);
+  
+}
+
+.submenu > ul {
+  display:block;
+  list-style: none;
+}
+
+.itemmenu:hover{
+  background-color: rgb(37, 155, 251);
+}
+
+.contentEditor{
+  display:flex;
+}
+
+.iconsave{
+  position:relative;
+  top:0;
+  left:0;
+  height:30px;
+}
+
+.iconsave:hover{
+  background-color: black;
+}
