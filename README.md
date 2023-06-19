@@ -20,7 +20,7 @@
 
 >entrecomillado
 
-`esto es una cita`
+resalta `esto es una cita` en el texto.
 
 ```
 Este texto es un bloque
@@ -48,9 +48,9 @@ Este texto es un bloque
 
 ### lista tareas
 
--[x] comprar helados
--[ ] comprar manzanas
--[] \(otras tareas)
+- [x] comprar helados
+- [ ] comprar manzanas
+- [ ] \(otras tareas)
 
 ### mencion
 @codebaou
