@@ -47,6 +47,7 @@ Este texto es un bloque
   -second
 
 ###lista tareas
+
 -[x] comprar helados
 -[ ] comprar manzanas
 -[] \(otras tareas)
