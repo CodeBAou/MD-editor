@@ -1,0 +1,43 @@
+/** 
+* Los estilos como se muestra en un .md
+*/
+
+/** Title 1   # */      /** class */   
+
+/** Title 2 ## */       /** class */ 
+
+/** Title 3 ### */      /** class */ 
+
+/** Bold  ** ** */      /** class */ 
+
+/** cursiva * *  */     /** class */ 
+
+/** tachado ~~ ~~ */        /** class */ 
+
+/** cursiva + negrita + anidada ** __  __ ** */     /** class */ 
+
+/** negrita y cursiva  *** *** */       /** class */ 
+
+/** subscript <sub> </sub> */       /** class */ 
+
+/** superscript <sup> </sup> */     /** class */ 
+
+/** entrecomillado > */     /** class */ 
+
+/** cita ` ` */     /** class */ 
+
+/** bloque *** *** */       /** class */ 
+
+/** enlace [ ]( )  */       /** class */ 
+
+/** img  ![ ] ( ) */        /** class */ 
+
+/** lista ordenada ol */        /** class */ 
+
+/** lista no ordenada ul */     /** class */ 
+
+/** lista anidada */        /** class */ 
+
+/** lista tareas */     /** class */ 
+
+/** menciones */        /** class */ 

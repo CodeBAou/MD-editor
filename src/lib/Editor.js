@@ -17,52 +17,40 @@ class Editor{
 
         this.editorhtml = document.createElement("div");
         this.editorhtml.setAttribute('class','editorhtml');
-        this.editorhtml.setAttribute('id',this.id);
+        this.editorhtml.setAttribute('id',order);
 
         this.textarea   = document.createElement("textarea");
+        this.textarea.setAttribute('id','textareaid');
 
-        this.textarea.addEventListener("change", (event) => {
+        this.textarea.addEventListener("change", (event) => { //Define Value
             this.data.value = event.target.value;
         });
         
         this.openPallet();
         this.editorhtml.appendChild(this.textarea);
         
-        console.log("---------------------new editor");
-        console.log(this.data);
+        
     }
 
     setValue( value ) { this.data.value = value;}
         
     setType( type )   { this.data.type = type;}
 
-    getEditorData()   { return this.data;}
+    getData()   { return this.data;}
         
     getEditorHTML()   { return this.editorhtml; }
     
     openPallet(){
         let pallet = document.createElement('div');
         pallet.setAttribute('class','pallet');
-
+        pallet.setAttribute('id','palletid');
         this.buttonT(pallet);
-        this.buttonDelete(pallet);
-
         this.editorhtml.appendChild(pallet);
     }
 
-    buttonSave(){
-        //icon save
-        let save = document.createElement('img');
-        save.setAttribute('src','./icon/save.svg');
-        save.setAttribute('class','icoPallet');
-
-        save.addEventListenner('click',()=>{
-
-        });
-
-    }
 
     buttonT(pallet){
+
          //icon titulo
          let t = document.createElement('img');
          t.setAttribute('src','./icon/t.svg');
@@ -78,6 +66,7 @@ class Editor{
  
                  let submenu = document.createElement('div');
                  submenu.setAttribute('class','submenu');
+                 submenu.setAttribute('id','submenu'+this.order);
  
                  let list = document.createElement('ul');
  
@@ -105,16 +94,21 @@ class Editor{
                  t2.appendChild( t2btn);
                  t3.appendChild( t3btn );
                  
-                 t1.addEventListener('click',()=>{
- 
+                 t1.addEventListener('click',()=>{ //Define type
+
+                    this.data.type = "t1";
+                    document.getElementById('submenu'+this.order).remove();
+                    
                  });
  
-                 t2.addEventListener('click',()=>{
- 
+                 t2.addEventListener('click',()=>{//Define Type
+                    this.data.type = "t2";
+                    document.getElementById('submenu'+this.order).remove();
                  });
  
-                 t3.addEventListener('click',()=>{
- 
+                 t3.addEventListener('click',()=>{//Define Type
+                    this.data.type = "t3";
+                    document.getElementById('submenu'+this.order).remove();
                  });
  
                  list.appendChild(t1);
@@ -136,16 +130,5 @@ class Editor{
          pallet.appendChild(t);
     }
 
-    buttonDelete(pallet){
-
-        let icon = document.createElement('img');
-        icon.setAttribute('src','./icon/delete.svg');
-        icon.setAttribute('class','icoPallet');
-
-        icon.addEventListener('click', ()=>{
-            this.editorhtml.remove();
-        });
-
-        pallet.appendChild(icon);
-    }
+   
 }

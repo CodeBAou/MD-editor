@@ -6,26 +6,31 @@ body {
   background-color:white;
 }
 
+body *{
+  outline: none;
+}
+
 header{
- height: 20px;
+ height: 40px;
  width:100vw;
   border:none;
   padding:0;
   padding-top:-1px;
   margin:0;
+  margin-bottom:10px;
   font-size: 15px;
 }
 
 .btnMenu{
- width:20px;
- height:20px;
+ width:30px;
+ height:30px;
  margin:0px;
  padding:0px;
- color:white;
+ color:rgb(40, 167, 255);
  font-size:18px;
  align-content: center;
  padding-top:-2px;
- background-color:black;
+
  border:none;
 }
 
@@ -37,11 +42,12 @@ main{
 }
 
 textarea{
-  min-width: 96vw;
+  min-width: 89vw;
   height:40px;
   font-size:12px;
   border:none;
   background-color:rgb(217, 240, 255);
+  border:1px solid rgb(151, 151, 151);
   border: 1px solid rgb(40, 167, 255);
   resize: vertical;
 }
@@ -55,10 +61,6 @@ textarea{
    border:1px solid rgb(180, 224, 255);
 }
 
-.icoPallet:hover{
-  background-color: rgb(53, 162, 251);
-}
-
 .submenu{
   position:absolute;
   display:flex;
@@ -66,7 +68,7 @@ textarea{
   width:200px;
   
   margin-top:20px;
-  background-color: rgb(83, 176, 252);
+  background-color: rgb(118, 193, 254);
   
 }
 
@@ -75,21 +77,53 @@ textarea{
   list-style: none;
 }
 
-.itemmenu:hover{
-  background-color: rgb(37, 155, 251);
+.submenu > ul > li input {
+  border:none;
+  border-bottom: 1px solid rgb(65, 166, 255);
+  background-color: rgb(118, 193, 254);
 }
 
+.submenu > ul > li input:hover{
+  border-bottom:1px solid white;
+  color:white;
+}
+
+.itemmenu:hover{
+  background-color: rgb(83, 176, 252);
+  background-color: none;
+}
+
+/** Contenedor principal de todo el editor*/
 .contentEditor{
   display:flex;
 }
-
-.iconsave{
-  position:relative;
-  top:0;
-  left:0;
+/** Contenedor para los botones guardar / Eliminar del elemento editor*/
+.contentSD{
+  display:flex;
+  flex-direction:column;
   height:30px;
 }
+/** icon SaveAndDelete dentro de contentSD*/
+.icoPallet{
+    width: 30px;
+    margin-top:4px;
+}
 
-.iconsave:hover{
-  background-color: black;
+.icoPallet:hover{
+ border-bottom: 1px solid blue;
+}
+
+/** Contenedor para los elementos del editor*/
+.contentE{
+  display:flex;
+}
+
+.invalid{
+  display:flex;
+  flex-direction: row;
+  height:20px;
+  min-width:400px;
+  background-color: rgb(118, 193, 254);
+  border:1px solid rgb(180, 224, 255);
+  border:1px solid red;
 }

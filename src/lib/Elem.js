@@ -92,11 +92,14 @@ class Elem{
     createNode(value){
         let div  = document.createElement("div");
         let span = document.createElement("span");
+        span.setAttrubute('class','');
         let text = document.createTextNode(value);
         span.appendChild(text);
         div.appendChild(span);
         this.elem = div;
     }
+
+    
 
     
 }
