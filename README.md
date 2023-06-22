@@ -10,7 +10,7 @@
 
 ~~tachado~~
 
-**cursiva en negrita _ anidada_** 
+**cursiva en negrita _anidada_ a** 
 
 ***todo en negrita y cursiva***
 
