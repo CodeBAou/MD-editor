@@ -119,18 +119,19 @@ class Engine{
                         state = false;
                     }else{
                         state = true;
+                        document.getElementById('palletid').setAttribute('class','pallet');
                     }
 
                     if(state == true && data.value == "" || data.value == null || data.value == undefined ){
                         //Marcar text area estilos invalido
-                        document.getElementById('textareaid').setAttribute('class','invalid');
+                        document.getElementById('textareaid').setAttribute('class','textareaInvalid');
                         state = false;
                     }else{
                         state = true;
+                        document.getElementById('textareaid').setAttribute('class','');
                     }
 
-                   
-                    
+
                 break;
 
             default:

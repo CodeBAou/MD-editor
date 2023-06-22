@@ -27,7 +27,7 @@ class Editor{
         });
         
         this.openPallet();
-        this.editorhtml.appendChild(this.textarea);
+        this.editorhtml.appendChild( this.textarea );
         
         
     }
@@ -116,7 +116,6 @@ class Editor{
                  list.appendChild(t3);
  
                  submenu.appendChild(list);
- 
                  pallet.appendChild(submenu);
              }
  
@@ -126,7 +125,7 @@ class Editor{
                  document.getElementsByClassName('submenu')[0].remove();
              }
          });
- 
+         
          pallet.appendChild(t);
     }
 
