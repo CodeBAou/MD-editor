@@ -9,11 +9,11 @@ cursiva  =  c                 * this text is italicized *  o  _ this text is ita
 
 tachado  =  t                 ~~ this was mistaken text  ~~
 
-cursiva  =  cna                   ** this text is _extremely_ important **
+cursiva  =  cna                   ** this text is _extremely_ important **   <b><i> <em></em> </i></b>   b = negrita   em = _ _  
 en negrita y
 anidada
 
-todo en  = nc                  *** All this text is important ***
+todo en  = nc                  *** All this text is  important ***    <b><i>
 negrita 
 y cursiva
 

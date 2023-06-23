@@ -42,26 +42,28 @@ main{
 }
 
 textarea{
-  min-width: 89vw;
-  height:40px;
+  min-width: 95vw;
+  height:25px;
   font-size:12px;
   border:none;
-  background-color:rgb(217, 240, 255);
-  border:1px solid rgb(151, 151, 151);
-  border: 1px solid rgb(40, 167, 255);
+  border-bottom:1px solid black;
   resize: vertical;
+  display:flex;
+  overflow:hidden;
+  margin-top:5px;
 }
 
 .textareaInvalid{
-  min-width: 89vw;
-  height:40px;
+  min-width: 95vw;
+  height:25px;
   font-size:12px;
   border:none;
-  background-color:rgb(217, 240, 255);
-  border:1px solid rgb(151, 151, 151);
-  border: 1px solid rgb(40, 167, 255);
+  border-bottom:1px solid black;
   resize: vertical;
-  border:1px solid red;
+  display:flex;
+  overflow:hidden;
+  margin-top:5px;
+  border-bottom:1px solid red;
 }
 
 .pallet{
@@ -69,8 +71,8 @@ textarea{
    flex-direction: row;
    height:20px;
    min-width:400px;
-   background-color: rgb(118, 193, 254);
-   border:1px solid rgb(180, 224, 255);
+  
+   
 }
 
 .submenu{
@@ -78,9 +80,10 @@ textarea{
   display:flex;
   flex-direction:column;
   width:200px;
-  
+  border:1px solid gray;
+  background-color:white;
   margin-top:20px;
-  background-color: rgb(118, 193, 254);
+  
   
 }
 
@@ -92,12 +95,12 @@ textarea{
 .submenu > ul > li input {
   border:none;
   border-bottom: 1px solid rgb(65, 166, 255);
-  background-color: rgb(118, 193, 254);
 }
 
 .submenu > ul > li input:hover{
   border-bottom:1px solid white;
   color:white;
+  background-color: gray;
 }
 
 .itemmenu:hover{
@@ -138,4 +141,28 @@ textarea{
   background-color: rgb(118, 193, 254);
   border:1px solid rgb(180, 224, 255);
   border:1px solid red;
+}
+
+.contentAtributes{
+  height:20px;
+  display:flex;
+  flex-grow:2;
+}
+
+.contentAtributes > img{
+  margin-top:-1px;
+}
+
+.contentSaveDel{
+  height:20px;
+  width:40px;
+}
+
+.contentSaveDel > img{
+  width: 20px;
+  margin-top:-1px;
+}
+
+.elemcontent{
+  
 }

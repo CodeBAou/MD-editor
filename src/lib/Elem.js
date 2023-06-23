@@ -23,8 +23,6 @@ class Elem{
 
     constructor(data){
 
-        this.elem  = null;
-
         /**
          this.data       = {
             type:'',
@@ -33,70 +31,121 @@ class Elem{
            }
          */
         this.data  = data;
+        this.elem  = null;
+        let value  = "";
+        
+        //Se definen el html y la clase segun el tipo de elemento
+        switch( this.data.type ){ //Select class by style
 
-
-        switch(type){ //Select class by style
             case 't1':
+
+                this.elem = document.createElement('h1');
                 this.elem.setAttribute("class","t1");
+                value = document.createTextNode( this.data.value );
+                this.elem.appendChild( value );
                 break;
+
             case 't2':
+
+                this.elem = document.createElement('h2');
                 this.elem.setAttribute("class","t2");
+                value = document.createTextNode( this.data.value );
+                this.elem.appendChild( value );
                 break;
+
             case 't3':
+
+                this.elem = document.createElement('h3');
                 this.elem.setAttribute("class","t3");
+                value = document.createTextNode( this.data.value );
+                this.elem.appendChild( value );
                 break;
-            case 'bold':
-                this.elem.setAttribute("class","bold");
+
+            case 'b':
+                this.elem = document.createElement('b');
+                this.elem.setAttribute("class","b");
                 break;
-            case 'cursiva':
-                this.elem.setAttribute("class","cursiva");
+
+            case 'c':
+                this.elem = document.createElement('i');
+                this.elem.setAttribute("class","c");
                 break;
-            case 'tachado':
-                this.elem.setAttribute("class","tachado");
+
+            case 't':
+                this.elem = document.createElement('del');
+                this.elem.setAttribute("class","t");
                 break;
-            case 'cursivaAnidada':
-                this.elem.setAttribute("class","cursivaAnidada");
+
+            case 'cna':
+                this.elem = document.createElement('b');
+                let i = document.createElement('i');
+                this.elem.setAttribute("class","cna");
                 break;
-            case 'negritaCursiva':
-                this.elem.setAttribute("class","negritaCursiva");
+
+            case 'nc':
+                this.elem.setAttribute("class","nc");
                 break;
-            case 'subScript':
-                this.elem.setAttribute("class","subScript");
+
+            case 'sub':
+                this.elem.setAttribute("class","sub");
                 break;
-            case 'superScript':
-                this.elem.setAttribute("class","superScript");
+
+            case 'sup':
+                this.elem.setAttribute("class","sup");
                 break;
-            case 'entreComillado':
-                this.elem.setAttribute("class","entreComillado");
+
+            case 'ec':
+                this.elem.setAttribute("class","ec");
                 break;
+
             case 'cita':
                 this.elem.setAttribute("class","cita");
                 break;
-            case 'color':
-                this.elem.setAttribute("class","color");
+
+            case 'bloque':
+                this.elem.setAttribute("class","bloque");
                 break;
-            case 'vinculos':
-                this.elem.setAttribute("class","vinculos");
+
+            case 'url':
+                this.elem.setAttribute("class","url");
                 break;
-            case 'enlaceSeccion':
-                this.elem.setAttribute("class","enlaceSeccion");
+
+            case 'img':
+                this.elem.setAttribute("class","img");
+                break;
+
+            case 'ol':
+                this.elem.setAttribute("class","ol");
+                break;
+
+            case 'ul':
+                this.elem.setAttribute("class","ul");
+                break;
+
+            case 'la':
+                this.elem.setAttribute("class","la");
+                break;
+
+            case 'lt':
+                this.elem.setAttribute("class","lt");
+                break;
+
+            case 'user':
+                this.elem.setAttribute("class","user");
                 break;
         }
+
+       
     }
 
     setValue(value) { this.data.value = value; }
+
     setType(type)   { this.data.type  = type; }
 
     getElemData()   { return this.data; }
 
-    createNode(value){
-        let div  = document.createElement("div");
-        let span = document.createElement("span");
-        span.setAttrubute('class','');
-        let text = document.createTextNode(value);
-        span.appendChild(text);
-        div.appendChild(span);
-        this.elem = div;
+    getHTML(){
+        return this.elem;
     }
 
     
