@@ -45,7 +45,11 @@ class Editor{
         //contenedor para los botones de tipo
         let contentAtributes = document.createElement('div');
         contentAtributes.setAttribute('class','contentAtributes');
-        contentAtributes.appendChild(this.buttonT(pallet));
+
+        //Aqui se cargan los botones de tipo                             // <-- carga botones seleccion de tipo
+        contentAtributes.appendChild( this.buttonT(pallet) );
+        contentAtributes.appendChild( this.ButonP(pallet) );
+
         pallet.appendChild( contentAtributes );
 
         //contenedor para los botones sabe y delete
@@ -70,11 +74,12 @@ class Editor{
         this.editorhtml.appendChild(this.textarea);        
     }
 
+    //Bonton TITULO, funcionalidad para escribir el tipo en this.data.type
     buttonT(pallet){
 
          //icon titulo
          let t = document.createElement('img');
-         t.setAttribute('src','./icon/t.svg');
+         t.setAttribute('src','./icon/t.png');
          t.setAttribute('class','icoPallet');
  
          let open = false;
@@ -150,6 +155,21 @@ class Editor{
         return t;
     }
 
+    // boton PARRAFO , Funcionalidad para escribir el tipo en this.data.type
+    ButonP(){
+        
+        let p = document.createElement('img');
+        p.setAttribute('src','./icon/parrafo.png');
+        p.setAttribute('class','icoPallet');
+
+        p,addEventListener('click',()=>{
+            this.data.type = 'p';
+        });
+
+        return p;
+    }
+
+    //Boton para llamar a la funcion que convierte este editor en un elemento tipo en la interfaz
     ButonSave(){
        
         let save = document.createElement('img');
@@ -168,6 +188,7 @@ class Editor{
         return save;
     }
 
+    //Elimina este editor de la interfaz
     ButonDelete(){
 
         let deletebtn = document.createElement('img');
@@ -218,5 +239,7 @@ class Editor{
         return state;
 
     }
+
+    
    
 }

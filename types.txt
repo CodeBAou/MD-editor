@@ -3,25 +3,7 @@ titulo 1 =  t1                 # A first-level heading
 titulo 2 =  t2                 ## A second-level heading
 titulo 3 =  t3                 ### A third-level heading
 
-bold     =  b                 ** this is bold text **  o __ this is bold text
-
-cursiva  =  c                 * this text is italicized *  o  _ this text is italicized _
-
-tachado  =  t                 ~~ this was mistaken text  ~~
-
-cursiva  =  cna                   ** this text is _extremely_ important **   <b><i> <em></em> </i></b>   b = negrita   em = _ _  
-en negrita y
-anidada
-
-todo en  = nc                  *** All this text is  important ***    <b><i>
-negrita 
-y cursiva
-
-Subscript  = sub               <sub> this is a subscript text </sub>
-
-superscript = sup              <sup> this is a superscript text </sup>
-
-entrecomillado  = ec           > text that is a quote
+parrafo  =  p                  <p>     "permite editar el texto que contiene, por ejemplo tachar una palabra
 
 cita       = cita              `git status `
 
@@ -55,3 +37,38 @@ lista tareas  = lt               - [x] text lista (completada)
 
 mencionar 
 miembros o equipos = user        @nombreusuario | @nombreEquipo
+
+
+
+
+
+
+
+
+
+//tipos de texto , estos tipos estan dentro de un elemento por ejemplo puedes
+poner solo en negrita una palabra o tachar solo una palabra en todo el texto contenido
+dentro de un elemento parrafo:  Los elementos de edicion dentro de un elemento parrafo son 
+los siguientes:
+
+
+
+bold     =  b                 ** this is bold text **  o __ this is bold text
+
+cursiva  =  c                 * this text is italicized *  o  _ this text is italicized _
+
+tachado  =  t                 ~~ this was mistaken text  ~~
+
+cursiva  =  cna                   ** this text is _extremely_ important **   <b><i> <em></em> </i></b>   b = negrita   em = _ _  
+en negrita y
+anidada
+
+todo en  = nc                  *** All this text is  important ***    <b><i>
+negrita 
+y cursiva
+
+Subscript  = sub               <sub> this is a subscript text </sub>
+
+superscript = sup              <sup> this is a superscript text </sup>
+
+entrecomillado  = ec           > text that is a quote

@@ -61,76 +61,101 @@ class Elem{
                 this.elem.appendChild( value );
                 break;
 
+            case 'p':
+
+                this.elem = document.createElement('p');
+                this.elem.setAttribute("class","p");
+                value = document.createTextNode( this.data.value );
+                this.elem.appendChild( value );
+                break;
+
             case 'b':
+
                 this.elem = document.createElement('b');
                 this.elem.setAttribute("class","b");
                 break;
 
             case 'c':
+
                 this.elem = document.createElement('i');
                 this.elem.setAttribute("class","c");
                 break;
 
             case 't':
+
                 this.elem = document.createElement('del');
                 this.elem.setAttribute("class","t");
                 break;
 
             case 'cna':
+
                 this.elem = document.createElement('b');
                 let i = document.createElement('i');
                 this.elem.setAttribute("class","cna");
                 break;
 
             case 'nc':
+
                 this.elem.setAttribute("class","nc");
                 break;
 
             case 'sub':
+
                 this.elem.setAttribute("class","sub");
                 break;
 
             case 'sup':
+
                 this.elem.setAttribute("class","sup");
                 break;
 
             case 'ec':
+
                 this.elem.setAttribute("class","ec");
                 break;
 
             case 'cita':
+
                 this.elem.setAttribute("class","cita");
                 break;
 
             case 'bloque':
+
                 this.elem.setAttribute("class","bloque");
                 break;
 
             case 'url':
+
                 this.elem.setAttribute("class","url");
                 break;
 
             case 'img':
+
                 this.elem.setAttribute("class","img");
                 break;
 
             case 'ol':
+
                 this.elem.setAttribute("class","ol");
                 break;
 
             case 'ul':
+
                 this.elem.setAttribute("class","ul");
                 break;
 
             case 'la':
+
                 this.elem.setAttribute("class","la");
                 break;
 
             case 'lt':
+
                 this.elem.setAttribute("class","lt");
                 break;
 
             case 'user':
+                
                 this.elem.setAttribute("class","user");
                 break;
         }
